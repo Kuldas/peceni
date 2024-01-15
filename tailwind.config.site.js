@@ -19,13 +19,31 @@ module.exports = {
       white:  '#fff',
       // Neutrals: neutral colors, with a default fallback if you don't need shades. Always set a DEFAULT when you use shades.
       neutral: {
-        DEFAULT: colors.slate['800'],
-        ...colors.slate
+        DEFAULT: colors.gray['800'],
+        ...colors.gray
       },
       // Primary: primary brand color with a default fallback if you don't need shades. Always set a DEFAULT when you use shades.
       primary: {
         DEFAULT: 'oklch(53.24% 0.301 290.86 / <alpha-value>)'
       },
+      bake: {
+        DEFAULT: 'oklch(76.14% 0.11 68.99 / <alpha-value>)',
+        '50': 'oklch(98.00% 0.01 84.58 / <alpha-value>)',
+        '100': 'oklch(95.47% 0.03 84.59 / <alpha-value>)',
+        '200': 'oklch(90.10% 0.05 79.64 / <alpha-value>)',
+        '300': 'oklch(83.68% 0.09 78.11 / <alpha-value>)',
+        '400': 'oklch(76.14% 0.11 68.99 / <alpha-value>)',
+        '500': 'oklch(69.45% 0.14 61.50 / <alpha-value>)',
+        '600': 'oklch(63.44% 0.14 53.67 / <alpha-value>)',
+        '700': 'oklch(54.44% 0.12 48.74 / <alpha-value>)',
+        '800': 'oklch(46.69% 0.10 45.79 / <alpha-value>)',
+        '900': 'oklch(40.97% 0.08 47.96 / <alpha-value>)',
+        '950': 'oklch(26.76% 0.05 44.21 / <alpha-value>)',
+    },
+      offbg: {
+        DEFAULT: '#F5F2E9',
+      }
+    
     },
     extend: {
       // Set default transition durations and easing when using the transition utilities.
@@ -47,7 +65,7 @@ module.exports = {
       sans: [
         // Use a custom sans serif font for this site by changing 'Gaultier' to the
         // font name you want and uncommenting the following line.
-        // 'Gaultier',
+        // 'Merienda',
         ...defaultTheme.fontFamily.sans,
       ],
       serif: [
@@ -67,7 +85,7 @@ module.exports = {
       // semibold: 600,
       bold: 700,
       // extrabold: 800,
-      // black: 900,
+      black: 900,
     },
   },
   plugins: [

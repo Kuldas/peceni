@@ -21,10 +21,10 @@
                     : 'text-neutral decoration-primary focus-visible:ring-primary'
                 }}
             {{ else }}
-                inline-flex items-center py-3 px-4 rounded leading-none no-underline select-none whitespace-nowrap motion-safe:transition
+                inline-flex items-center py-3 px-6 rounded-3xl leading-none no-underline select-none whitespace-nowrap motion-safe:transition border-2 border-bake hover:border-bake-900 uppercase 
                 {{ inverted
-                    ? 'bg-white text-primary focus-visible:ring-white'
-                    : 'bg-primary text-white focus-visible:ring-primary'
+                    ? 'bg-white text-bake focus-visible:ring-white'
+                    : 'bg-transparent hover:bg-bake-900 text-bake-900 hover:text-white focus-visible:ring-bake-900'
                 }}
             {{ /if }}
             {{ class }}

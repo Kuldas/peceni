@@ -2,8 +2,8 @@
 id: home
 blueprint: page
 title: Home
-updated_by: ceaa75bd-bc37-4a8b-b0f2-b7af70e58b0e
-updated_at: 1693487994
+updated_by: c6f6c4be-25a2-46c9-b465-18e029775db0
+updated_at: 1705208632
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -20,25 +20,99 @@ page_builder:
         content:
           -
             type: text
-            text: 'Start out on top'
+            text: 'Ahoj kamarádi 👋'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Peak is your personal bespoke development sherpa. Start every project with this kit full of development goodies. '
+            text: 'V první řadě díky, že bude tuto hru hrát semnou 🙏🤘'
       -
         type: paragraph
         content:
           -
             type: text
-            text: "But beware, this kit ain't here to be pretty. There are some examples of what Peak can do, but the rest is up to you. "
+            text: 'Princip je jednoduchý - “soutěž” bude probíhat buď '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: '1x týdně'
+          -
+            type: text
+            text: ' nebo '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'ob týden '
+          -
+            type: text
+            text: 'a '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'jde o hodnocení toho, co upeču'
+          -
+            type: text
+            text: ' (kdo čekal něco víc, tak bohužel, nic víc neumím 🤣)'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Get climbing!'
+            marks:
+              -
+                type: bold
+              -
+                type: italic
+            text: 'P.S.:'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' Kdo by nevěděl co a jak, tak '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: '#'
+                  rel: null
+                  target: null
+                  title: null
+              -
+                type: italic
+            text: 'jukněte sem'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: ' nebo mi napište'
+          -
+            type: text
+            text: ' 😛'
+      -
+        type: set
+        attrs:
+          id: lrd0rle0
+          values:
+            type: buttons
+            buttons:
+              -
+                id: lrd0rm7l
+                label: Hlasovat
+                link_type: url
+                target_blank: false
+                url: '#'
+                button_type: button
     type: article
     enabled: true
   -

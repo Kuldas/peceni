@@ -15,11 +15,11 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            '--tw-prose-body': theme('colors.neutral.DEFAULT'),
-            '--tw-prose-headings': theme('colors.neutral.DEFAULT'),
+            '--tw-prose-body': theme('colors.black'),
+            '--tw-prose-headings': theme('colors.bake.900 / 1'),
             '--tw-prose-lead': theme('colors.neutral.DEFAULT'),
             '--tw-prose-links': theme('colors.neutral.DEFAULT'),
-            '--tw-prose-bold': theme('colors.neutral.DEFAULT'),
+            '--tw-prose-bold': theme('colors.black'),
             '--tw-prose-counters': theme('colors.neutral.DEFAULT'),
             '--tw-prose-bullets': theme('colors.neutral.DEFAULT'),
             '--tw-prose-hr': theme('colors.neutral.DEFAULT'),
@@ -56,7 +56,17 @@ module.exports = {
             },
             ':where(.prose > div > :last-child)': {
               marginBottom: '0 !important',
-            }
+            },
+            'h1': {
+              fontFamily: 'Merienda',
+              fontWeight: 900,
+            },
+            'strong': {
+              fontWeight: 700,
+            },
+            'a': {
+              fontWeight: 400,
+            },
           }
         }
       }),
