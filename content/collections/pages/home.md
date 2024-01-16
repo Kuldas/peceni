@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: c6f6c4be-25a2-46c9-b465-18e029775db0
-updated_at: 1705208632
+updated_at: 1705368209
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -59,7 +59,7 @@ page_builder:
             text: 'jde o hodnocení toho, co upeču'
           -
             type: text
-            text: ' (kdo čekal něco víc, tak bohužel, nic víc neumím 🤣)'
+            text: '. '
       -
         type: paragraph
         content:
@@ -67,38 +67,8 @@ page_builder:
             type: text
             marks:
               -
-                type: bold
-              -
-                type: italic
-            text: 'P.S.:'
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: ' Kdo by nevěděl co a jak, tak '
-          -
-            type: text
-            marks:
-              -
-                type: link
-                attrs:
-                  href: '#'
-                  rel: null
-                  target: null
-                  title: null
-              -
-                type: italic
-            text: 'jukněte sem'
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: ' nebo mi napište'
-          -
-            type: text
-            text: ' 😛'
+                type: small
+            text: 'kdo čekal něco víc, tak bohužel. Nic víc neumím 🤣'
       -
         type: set
         attrs:
@@ -113,6 +83,56 @@ page_builder:
                 target_blank: false
                 url: '#'
                 button_type: button
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+              -
+                type: italic
+              -
+                type: small
+            text: 'P.S.:'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+              -
+                type: small
+            text: ' Kdo by nevěděl co a jak, tak '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: '#jak-se-to-hraje'
+                  rel: null
+                  target: null
+                  title: null
+              -
+                type: italic
+              -
+                type: small
+            text: 'jukněte sem'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+              -
+                type: small
+            text: ' nebo mi napište'
+          -
+            type: text
+            marks:
+              -
+                type: small
+            text: ' 😛'
     type: article
     enabled: true
   -
