@@ -14,18 +14,20 @@
 >
     <button
         @click.prevent.stop="mobileNavOpen = !mobileNavOpen"
-        class="fixed bottom-0 right-0 z-30 flex items-center justify-center w-16 h-16 mr-8 text-xs font-bold text-white mb-safe rounded bg-primary focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2"
+        class="fixed bottom-0 right-0 z-30 flex items-center justify-center w-16 h-16 mr-8 text-xs font-bold text-white mb-safe rounded-full bg-bake focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2"
         :aria-label="
         mobileNavOpen
             ? '{{ trans:strings.nav_close }}'
             : '{{ trans:strings.nav_open }}'
         "
         :aria-expanded="mobileNavOpen"
-        x-text="mobileNavOpen ? '{{ trans:strings.close }}' : '{{ trans:strings.menu }}'"
-    ></button>
+    >
+        <svg x-show="mobileNavOpen" class="fill-bake-900" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
+        <svg x-show="!mobileNavOpen" class="fill-bake-900" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg>
+    </button>
 
     <div
-        class="fixed inset-0 z-20 pt-8 px-8 pb-12 flex flex-col justify-end bg-white"
+        class="fixed inset-0 z-20 pt-8 px-8 pb-12 flex flex-col justify-end bg-offbg"
         x-show="mobileNavOpen"
     >
         <ul class="flex flex-col py-2 space-y-4 overflow-auto">
