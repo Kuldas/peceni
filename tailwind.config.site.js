@@ -19,8 +19,8 @@ module.exports = {
       white:  '#fff',
       // Neutrals: neutral colors, with a default fallback if you don't need shades. Always set a DEFAULT when you use shades.
       neutral: {
-        DEFAULT: colors.gray['800'],
-        ...colors.gray
+        DEFAULT: 'oklch(26.76% 0.05 44.21 / <alpha-value>)',
+      // ...colors.gray
       },
       // Primary: primary brand color with a default fallback if you don't need shades. Always set a DEFAULT when you use shades.
       primary: {

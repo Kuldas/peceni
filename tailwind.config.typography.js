@@ -15,11 +15,11 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            '--tw-prose-body': theme('colors.black'),
+            '--tw-prose-body': theme('colors.bake.950 / 1'),
             '--tw-prose-headings': theme('colors.bake.900 / 1'),
             '--tw-prose-lead': theme('colors.neutral.DEFAULT'),
             '--tw-prose-links': theme('colors.neutral.DEFAULT'),
-            '--tw-prose-bold': theme('colors.black'),
+            '--tw-prose-bold': theme('colors.bake.950 / 1'),
             '--tw-prose-counters': theme('colors.neutral.DEFAULT'),
             '--tw-prose-bullets': theme('colors.neutral.DEFAULT'),
             '--tw-prose-hr': theme('colors.neutral.DEFAULT'),
