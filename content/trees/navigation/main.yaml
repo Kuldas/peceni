@@ -4,6 +4,10 @@ tree:
     entry: home
     title: Domů
   -
+    id: 7114d827-5f56-4ae9-af80-438af16e4250
+    title: 'Jak se to hraje?'
+    url: '#jak-se-to-hraje'
+  -
     id: 5611d85b-6394-4253-b6ca-b10ef31c12b9
     title: Examples
     url: '#'

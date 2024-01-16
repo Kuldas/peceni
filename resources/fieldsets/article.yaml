@@ -14,6 +14,7 @@ fields:
         - quote
         - removeformat
         - anchor
+        - small
       save_html: false
       toolbar_mode: fixed
       link_noopener: false
@@ -93,3 +94,5 @@ fields:
       smart_typography: true
       inline: false
       hide_display: false
+      word_count: false
+      always_show_set_button: false

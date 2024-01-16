@@ -33,6 +33,7 @@ fields:
         - h3
         - bold
         - italic
+        - small
         - unorderedlist
         - orderedlist
         - removeformat
@@ -63,6 +64,8 @@ fields:
       smart_typography: true
       inline: false
       hide_display: false
+      word_count: false
+      always_show_set_button: false
   -
     handle: text_basic
     field:
